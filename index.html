@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Chango&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kavivanar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@200..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Api Product Feedback - Home</title>
+	</head>
+	<body>
+		<main class="feedback-page">
+			<section class="feedback-header">
+				<div class="feedback-header-title">
+					<svg viewBox="0 0 24 24">
+						<path
+							fill="currentColor"
+							d="M12,6A6,6 0 0,1 18,12C18,14.22 16.79,16.16 15,17.2V19A1,1 0 0,1 14,20H10A1,1 0 0,1 9,19V17.2C7.21,16.16 6,14.22 6,12A6,6 0 0,1 12,6M14,21V22A1,1 0 0,1 13,23H11A1,1 0 0,1 10,22V21H14M20,11H23V13H20V11M1,11H4V13H1V11M13,1V4H11V1H13M4.92,3.5L7.05,5.64L5.63,7.05L3.5,4.93L4.92,3.5M16.95,5.63L19.07,3.5L20.5,4.93L18.37,7.05L16.95,5.63Z"
+						></path>
+					</svg>
+					<h3 class="heading-3">
+						<span id="feedback-counter">6</span>
+						Suggestion<span id="feedback-plural">s</span>
+					</h3>
+				</div>
+				<form id="form-search" class="feedback-header-filters">
+					<label for="filter-sort">
+						<span>Sort by</span>
+						<select id="filter-sort" name="sort">
+							<option value="recent">Recent</option>
+							<option value="upvotes">Most Upvotes</option>
+						</select>
+					</label>
+					<label for="filter-page">
+						<span>Sort by</span>
+						<select id="filter-page" name="page">
+							<option value="1">1</option>
+							<option value="5">5</option>
+							<option value="10">10</option>
+							<option value="25">25</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+						</select>
+					</label>
+					<button id="search" class="btn purple-accent-1 white-text heading-4" type="submit">
+						Search
+					</button>
+				</form>
+			</section>
+			<section class="feedback-wrapper">
+				<div class="feedback-item">
+					<div class="feedback-item-votes">
+						<svg viewBox="0 0 24 24">
+							<path
+								d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+								style="fill: currentcolor"
+							></path>
+						</svg>
+						<span class="text-regular-3">112</span>
+					</div>
+					<div class="feedback-item-text">
+						<h3 class="heading-3">Add tags for solutions</h3>
+						<p>Easier to search for solutions based on a specific stack.</p>
+						<div class="feedback-chip text-regular-3">Enhancement</div>
+					</div>
+					<div class="feedback-item-comments">
+						<svg class="grey-lighten-1-text" viewBox="0 0 24 24">
+							<path
+								fill="currentColor"
+								d="M12,3C17.5,3 22,6.58 22,11C22,15.42 17.5,19 12,19C10.76,19 9.57,18.82 8.47,18.5C5.55,21 2,21 2,21C4.33,18.67 4.7,17.1 4.75,16.5C3.05,15.07 2,13.13 2,11C2,6.58 6.5,3 12,3Z"
+							></path>
+						</svg>
+						<span class="bold">4</span>
+					</div>
+				</div>
+				<div class="feedback-item">
+					<div class="feedback-item-votes">
+						<svg viewBox="0 0 24 24">
+							<path
+								d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+								style="fill: currentcolor"
+							></path>
+						</svg>
+						<span class="text-regular-3">99</span>
+					</div>
+					<div class="feedback-item-text">
+						<h3 class="heading-3">Add a dark theme option</h3>
+						<p>It would help people with light sensitivities and who prefer dark mode.</p>
+						<div class="feedback-chip text-regular-3">Feature</div>
+					</div>
+					<div class="feedback-item-comments">
+						<svg class="grey-lighten-1-text" viewBox="0 0 24 24">
+							<path
+								fill="currentColor"
+								d="M12,3C17.5,3 22,6.58 22,11C22,15.42 17.5,19 12,19C10.76,19 9.57,18.82 8.47,18.5C5.55,21 2,21 2,21C4.33,18.67 4.7,17.1 4.75,16.5C3.05,15.07 2,13.13 2,11C2,6.58 6.5,3 12,3Z"
+							></path>
+						</svg>
+						<span class="bold">4</span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/app.js"></script>
+	</body>
+</html>
