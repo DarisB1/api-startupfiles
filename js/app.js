@@ -11,6 +11,8 @@ async function getFeedBack() {
 	console.log(data);
 }
 
+getFeedBack() 
+
 function createContainer(classAdd = "", idAdd = "", type) {
 	const element = document.createElement(type);
 	if (classAdd) element.className = classAdd;
@@ -48,7 +50,7 @@ function createPage(title, desc, vote, category, comment) {
 
 	const p = createText("", "", "p", desc);
 
-	const divchip = createText("feedback-chip text-regular-3", "", category);
+	const divchip = createText("feedback-chip text-regular-3", "", "div", category);
 
 	const divComment = createContainer("feedback-item-comments", "", "div");
 
